@@ -1,0 +1,68 @@
+.card {
+	@include flexCenter;
+	flex-direction: column;
+	background-color: $verydarkmagenta;
+	padding: 3vw 3vh;
+	border-radius: 5%;
+	height: 15vh;
+	font-size: 1.045vw;
+	text-overflow: clip;
+	overflow: hidden;
+	p{
+		color: $lightgrayishmagenta
+	}
+
+	.photo {
+		border-radius: 50%;
+		margin-right: 10%;
+		height: 2.5vw;
+	}
+	.user {
+		@include flexCenter;
+		flex-direction: row;
+		width: 100%;
+		height: 100%;
+
+		span {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		.img {
+			display: flex;
+			align-items: center;
+            justify-content: flex-start;
+
+			width: 20%;
+			height: 100%;
+		}
+        .userinfo{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+            width: 80%;
+            height: 100%;
+			span:first-child{
+				line-height: 1.7em;
+				color:$white;
+			}
+			span:nth-child(2){
+				color: $sofpink
+
+			}
+        }	
+	}
+}
+// p{
+//     // display: flex;
+//     // justify-content: center;
+//     // align-items: center;
+//     // flex-direction: column;
+// }
+.second {
+	margin: 0 5%;
+	margin-top: 30px;
+}
+.third {
+	margin-top: 60px;
+}

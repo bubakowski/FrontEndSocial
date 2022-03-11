@@ -1,0 +1,14 @@
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+@mixin rating {
+	
+	background-color: $lightgrayishmagenta;
+	padding: 2%;
+	border-radius: 10px;
+	width: 60%;
+	text-align: end;
+}
